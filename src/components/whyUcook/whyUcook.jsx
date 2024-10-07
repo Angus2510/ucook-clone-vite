@@ -1,4 +1,5 @@
 import Card from "./card";
+import "./whyUcook.css";
 import chefImg from "/img/chef.svg"; // Adjust path according to your structure
 import moneyImg from "/img/money.svg";
 import produceImg from "/img/fresh.svg";

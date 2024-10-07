@@ -1,8 +1,10 @@
 .why__container {
   display: flex;
+  flex: 1;
   flex-wrap: wrap; /* Allows cards to wrap into a new row */
   justify-content: center; /* Center cards horizontally */
-  margin-top: 3rem; /* Space above the container */
+  margin-top: 3rem;
+  text-align: center; /* Space above the container */
 }
 
 .why__header {
@@ -17,7 +19,9 @@
   flex-wrap: wrap; /* Allow wrapping of cards */
   justify-content: center; /* Center cards horizontally */
   gap: 1rem; /* Space between cards */
-  max-width: 1200px; /* Limit the width of the card container */
+  flex: 1 1 calc(33.333% - 2rem); /* This allows 3 cards per row */
+  box-sizing: border-box;
+
   margin: 0 auto; /* Center the container itself */
 }
 
