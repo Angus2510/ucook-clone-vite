@@ -1,0 +1,19 @@
+.why__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.why__header {
+  margin-top: 3rem;
+  color: black;
+  font-size: 2rem;
+}
+
+.why__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+}

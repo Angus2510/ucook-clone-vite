@@ -1,0 +1,169 @@
+/*the root is a great place to store variable as it will be avaliable throughout the project
+*/
+:root {
+  --color-primary-1: #469a19;
+  --color-primary-2: #f2a50c;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+  --line: 1px solid var(--color-grey-light-2);
+}
+
+/* these are the global reset  all the below code is the base of the project*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 68.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Gold color for the stars */
+
+.testimonials-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+.testimonials-section .testimonial {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+.testimonials-section .testimonial .testimonial-content h4 {
+  display: flex;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+}
+.testimonials-section .testimonial .testimonial-content .rating {
+  font-size: 1.5rem;
+  color: #ffd700;
+  margin-bottom: 10px;
+}
+.testimonials-section .testimonial .testimonial-content p {
+  font-size: 1rem;
+  color: black;
+  font-style: italic;
+}
+
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__top {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px 20px;
+}
+.footer__middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.footer__column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer__column h4 {
+  margin-bottom: 10px;
+}
+.footer__links {
+  list-style: none;
+}
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+.footer__subscribe {
+  margin-bottom: 1rem;
+}
+.footer__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.footer__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__input {
+  border: 1px solid #e0e0e0;
+  border-right: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  outline: none;
+}
+.footer__input:focus {
+  border-color: #333;
+}
+.footer__button {
+  background-color: #1c683c;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: none;
+  cursor: pointer;
+}
+.footer__button:hover {
+  background-color: #1f5c29;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+.footer__social a {
+  margin: 0 10px;
+}
+.footer__social a img {
+  width: 24px;
+} /*# sourceMappingURL=main.css.map */
