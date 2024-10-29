@@ -106,6 +106,11 @@ const Footer = () => (
           </p>
         </div>
       </div>
+      <div className="original-website">
+        <a href="https://www.ucook.co.za/?gad_source=1&gclid=Cj0KCQjwj4K5BhDYARIsAD1Ly2q2j6LrjCnN5ZIbbtc1oOUomCsAWS0kiiDXBrVzX95o4Wz7IiqwwKAaArR8EALw_wcB">
+          Original Website
+        </a>
+      </div>
     </div>
     <div className="help-button">
       <img

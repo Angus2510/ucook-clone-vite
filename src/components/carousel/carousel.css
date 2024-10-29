@@ -7,89 +7,88 @@
   justify-content: center;
   align-items: center;
 }
-.carousel input[type="radio"] {
-  display: none;
-}
-.carousel .carousel__inner {
+
+.carousel__inner {
   display: flex;
   transition: transform 0.5s ease-in-out;
   width: 400%;
 }
-.carousel .carousel-item {
+
+.carousel-item {
   width: 100%;
   display: flex;
   flex-shrink: 0;
   align-items: center;
 }
-.carousel .carousel-item__image {
+
+.carousel-item__image {
   width: 50%;
   height: 400px;
   background-size: cover;
   background-position: center;
   border-radius: 0 0 6rem;
-  background-color: orangered;
+  background-color: orange;
 }
-.carousel .carousel-item__content {
+
+.carousel-item__content {
   width: 50%;
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px;
-  background-color: orangered;
+  background-color: orange;
   color: #fff;
 }
-.carousel .carousel-item__content h1 {
+
+.carousel-item__content h1 {
   margin: 0 0 10px 0;
   font-size: 4rem;
 }
-.carousel .carousel-item__content p {
+
+.carousel-item__content p {
   margin: 0 0 20px 0;
   font-size: 1.5rem;
   color: #fff;
 }
-.carousel .carousel-item__content button {
-  background-color: orangered;
-  border: 1px solid black;
+
+.carousel-item__content button {
+  background-color: orange;
+  border: 1px solid white;
   padding: 10px 20px;
   width: 30%;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.carousel .carousel__nav {
+
+/* Navigation arrows */
+.carousel__arrow {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-}
-.carousel .carousel__nav .carousel__nav__label {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-color: #ccc;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
-.carousel .carousel__nav .carousel__nav__label:hover {
-  background-color: #aaa;
+
+.carousel__arrow--left {
+  left: 20px;
 }
 
-#carousel-1:checked ~ .carousel__inner {
-  transform: translateX(0%);
+.carousel__arrow--right {
+  right: 20px;
 }
 
-#carousel-2:checked ~ .carousel__inner {
-  transform: translateX(-100%);
-}
-
-#carousel-3:checked ~ .carousel__inner {
-  transform: translateX(-200%);
-}
-
-#carousel-4:checked ~ .carousel__inner {
-  transform: translateX(-300%);
+.carousel__arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
