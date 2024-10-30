@@ -71,16 +71,10 @@ const Footer = () => (
       <div className="footer__bottom">
         <div className="footer__social">
           <a href="#">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Arrows_right.svg"
-              alt="App Store"
-            />
+            <img src="./img/apple-store.svg" alt="App Store" />
           </a>
           <a href="#">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Arrows_right.svg"
-              alt="Google Play"
-            />
+            <img src="./img/google-play.svg" alt="Google Play" />
           </a>
           <a href="#">
             <img src="./img/facebook.png" alt="Facebook" />
